@@ -1,6 +1,6 @@
-<!-- default/original agent form definition -->
+<!-- agent form with identifiers only -->
 <viewdef name="Agent" class="edu.ku.brc.specify.datamodel.Agent" type="form" gettable="edu.ku.brc.af.ui.forms.DataGetterForObj" settable="edu.ku.brc.af.ui.forms.DataSetterForObj">
-	<desc>Agent subform for Acessions.</desc>
+	<desc>Agent Form</desc>
 	<columnDef>100px,2px,190px,5px,100px,2px,190px,5px,105px,2px,89px,2px,35px,15px,p:g</columnDef>
 	<columnDef os="lnx">115px,2px,200px,5px,115px,2px,200px,5px,119px,2px,115px,2px,35px,15px,p:g</columnDef>
 	<columnDef os="mac">130px,2px,230px,5px,120px,2px,230px,5px,139px,2px,125px,2px,38px,15px,p:g</columnDef>
@@ -29,6 +29,9 @@
 			<cell type="label" labelfor="7"/>
 			<cell type="field" id="7" name="email" uitype="text" colspan="5"/>
 			<cell type="field" id="mailto" name="this" uitype="plugin" initialize="name=WebLinkButton;weblink=MailTo;icon=EMail;watch=7"/>
+		</row>
+		<row>
+			<cell type="subview" id="agentIdentifiers" viewname="AgentIdentifiers" name="identifiers" colspan="18"/>
 		</row>
 		<row>
 			<cell type="subview" viewname="Address" id="9" name="addresses" colspan="14"/>
