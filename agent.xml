@@ -9,7 +9,7 @@
 	<rows>
 		<row>
 			<cell type="label" labelfor="0"/>
-			<cell type="field" id="0" name="agentType" uitype="combobox" ignore="true"/>
+			<cell type="field" id="0" name="agentType" uitype="combobox" default="Person" ignore="true"/>
 			<cell type="label" labelfor="1"/>
 			<cell type="field" id="1" name="title" uitype="combobox" picklist="AgentTitles"/>
 			<cell type="label" labelfor="2"/>
